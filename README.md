@@ -1,3 +1,11 @@
+# Census Data 
+
+Run python loader for census data:
+```
+python3 docs/data/census.json.py
+```
+
+
 # Hello Framework
 
 This is an [Observable Framework](https://observablehq.com/framework) project. To start the local preview server, run:

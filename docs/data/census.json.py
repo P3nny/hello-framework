@@ -23,7 +23,7 @@ load_dotenv()
 usr, pwd = dotenv_values().values()
 
 # e.g. relative to current working directory
-myDownloads = "./census"
+myDownloads = "./docs/data/census/"
 
 # Set base path for API calls
 BASE_URL = "https://ergebnisse2011.zensus2022.de/api/rest/2020/"
@@ -196,7 +196,7 @@ def tab2df(ffcsv):
     return df
 
 
-# try again, now with correct name
-myTable = tab2reuse("5000H-2005")
+# pruned table for a specific research question
+myTable = tab2reuse("5000H-2005", "HSHGR2", "PERSON01", "WHGFL3", "WFL200BXXX")
 
 print(myTable)
